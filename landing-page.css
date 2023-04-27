@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: (var(--scroll-padding), 50px);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+.page {
+	position: sticky;
+	top: 70px;
+	height: calc(100vh - 70px);
+	overflow: hidden;
+	background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+}
+
+.navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	background: #fff;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0 20px 20px;
+	height: 70px;
+}
+.navbar .logo img {
+	height: 30px;
+	cursor: pointer;
+}
+
+.navbar ul {
+	display: flex;
+	align-content: center;
+	list-style: none;
+	height: 100%;
+}
+
+.navbar ul li a {
+	height: 100%;
+	padding: 29px 30px;
+	color: black;
+	cursor: pointer;
+}
+.navbar .links:hover {
+	background-color: rgba(153, 0, 51, 0.3);
+}
+.navbar .donate-btn {
+	background-color: #990033;
+	color: white;
+}
+.showcase {
+	height: calc(100vh - 70px);
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./showcase.jpg") no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 100px;
+}
+.showcase h1 {
+	font-size: 64px;
+	text-align: center;
+	line-height: 100px;
+}
+.showcase .cta-btn {
+	padding: 30px 60px;
+	background-color: #990033;
+	outline: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.page-inner-container {
+	padding: 40px;
+	max-width: 1200px;
+	margin: auto;
+}
+.page-inner-container .heading {
+	font-size: 32px;
+	text-align: center;
+}
+.mission-section p {
+	text-align: center;
+	margin-top: 10px;
+}
+.about-section {
+	text-align: justify;
+	margin-top: 40px;
+}
+.about-section .img-container {
+	text-align: right;
+}
+.about-section img {
+	height: 30px;
+}
+.request-page .page-inner-container .flex-container,
+.donate-page .page-inner-container .flex-container {
+	display: flex;
+	width: 100%;
+	gap: 50px;
+}
+.page-inner-container .form-container {
+	flex: 1;
+}
+.page-inner-container .info-container {
+	flex: 1;
+}
+
+.form-container .form-group {
+	margin-bottom: 10px;
+}
+.form-container .control-label {
+	display: block;
+	margin-bottom: 3px;
+}
+.form-container input {
+	width: 100%;
+	padding: 8px;
+}
+.form-container select {
+	width: 100%;
+	padding: 8px;
+}
+.form-container button {
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	background-color: #990033;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.page-inner-container .flex-container .info-container {
+	border: 1px solid black;
+	padding: 20px 30px;
+}
+.flex-container .info-container ul {
+	margin: 10px 0;
+	list-style: circle;
+}
+.flex-container .info-container ul li {
+	margin: 8px 0;
+}
+.flex-container .info-container .donation-process {
+	border-top: 1px solid black;
+	padding-top: 10px;
+	margin-top: 30px;
+}
+.flex-container .info-container h2 {
+	text-align: center;
+}
+.request-page .page-inner-container .heading,
+.donate-page .page-inner-container .heading {
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+.form-submitted-container {
+	display: none;
+}
+.form-container.submitted .form-data {
+	display: none;
+}
+.form-container.submitted .form-submitted-container {
+	display: block;
+}

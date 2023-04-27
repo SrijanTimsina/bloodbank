@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Title</title>
+		<script
+			src="https://kit.fontawesome.com/8e52001b4f.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./landing-page.css" />
+		<link
+			rel="shortcut icon"
+			href="favicon.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo" id="home-btn">
+				<img src="./logo.png" alt="" />
+			</div>
+			<div class="options">
+				<ul>
+					<li>
+						<a id="abt-btn" class="links navbar-btn">About Us</a>
+					</li>
+					<li>
+						<a id="req-btn" class="links navbar-btn">Request</a>
+					</li>
+					<li>
+						<a id="dnt-btn" class="donate-btn navbar-btn">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="main page">
+				<div class="showcase">
+					<h1>Donate Blood Save Lives</h1>
+					<a href="#donate" class="cta-btn"> Donate Now! </a>
+				</div>
+			</div>
+			<div id="about-us" class="about-us-page page">
+				<div class="page-inner-container">
+					<div class="mission-section">
+						<p class="heading">Our Mission</p>
+						<p>
+							Providing a safe and reliable supply of blood to serve
+							the people of Nepal
+						</p>
+					</div>
+					<div class="about-section">
+						<p class="heading">About Us</p>
+						<br />
+						<p>
+							At Blood Reserve Center, we are committed to saving
+							lives by ensuring a safe and adequate supply of blood
+							for those in need. Our mission is to provide
+							high-quality blood products and services to our
+							community and beyond. We are a leading blood reserve
+							center, serving hospitals and medical centers throughout
+							the region.
+						</p>
+						<br />
+						<p>
+							Our state-of-the-art facilities and advanced testing
+							methods ensure the safety and effectiveness of every
+							blood product we collect and distribute. Our team of
+							highly skilled professionals includes experienced
+							phlebotomists, technicians, and medical experts who work
+							tirelessly to collect and process blood donations. We
+							are passionate about our work and take pride in making a
+							difference in the lives of those who need our help.
+						</p>
+						<br />
+						<p>
+							Whether you are a blood donor or a recipient, we are
+							here for you. Our goal is to create a comfortable and
+							welcoming environment for all who visit our center. We
+							strive to make the donation process as easy and
+							stress-free as possible, while also ensuring that every
+							donation is used effectively to help those in need. Join
+							us in our mission to save lives through blood donation.
+						</p>
+						<br />
+						<p>
+							Contact us today to learn more about our services and
+							how you can make a difference in the lives of others.
+						</p>
+						<br />
+						<br />
+						<p class="img-container">
+							<img src="./logo.png" alt="" />
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="request" class="request-page page">
+				<div class="page-inner-container">
+					<h1 class="heading">Request Blood</h1>
+					<div class="flex-container">
+						<div id="request-form" class="form-container">
+							<form action="" id="manage-request" class="form-data">
+								<div class="form-group">
+									<label for="" class="control-label"
+										>Patient Full Name</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										name="patient"
+										value=""
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label"
+										>Blood Group</label
+									>
+									<select
+										name="blood_group"
+										id=""
+										class="custom-select select2"
+										required
+									>
+										<option value=""></option>
+										<option>A+</option>
+										<option>B+</option>
+										<option>O+</option>
+										<option>AB+</option>
+										<option>A-</option>
+										<option>B-</option>
+										<option>O-</option>
+										<option>AB-</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="" class="control-label"
+										>Volume (L)</label
+									>
+									<input
+										type="number"
+										class="form-control"
+										name="volume"
+										step="0.01"
+										value=""
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label"
+										>Hospital Name</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										name="physician_name"
+										value=""
+										required
+									/>
+								</div>
+								<button type="submit">Submit</button>
+							</form>
+							<div class="form-submitted-container">
+								<p>
+									We have received your request. Our team will get in
+									contact with you soon.
+								</p>
+							</div>
+						</div>
+						<div id="request-info" class="info-container">
+							<div class="request-process">
+								<h2>Blood Request Process</h2>
+								<ul>
+									<li>
+										A request for blood is received from a patient or
+										hospital.
+									</li>
+									<li>
+										The staff checks the availability of blood in the
+										blood bank.
+									</li>
+									<li>
+										If the blood is available, it is immediately
+										reserved and arranged for delivery to the hospital
+										or individual in need.
+									</li>
+									<li>
+										If the blood is not available, the staff sends an
+										appeal to potential donors to donate blood.
+									</li>
+									<li>
+										Once a donor comes forward, the blood bank will
+										examine the donor's blood to ensure it is safe for
+										donation.
+									</li>
+									<li>
+										The patient or hospital receives the blood and the
+										necessary treatment.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="donate" class="donate-page page">
+				<div class="page-inner-container">
+					<h1 class="heading">Donate Blood</h1>
+					<div class="flex-container">
+						<div id="register-donor-form" class="form-container">
+							<form action="" id="manage-donor" class="form-data">
+								<div class="form-group">
+									<label for="" class="control-label"
+										>Full Name</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										name="name"
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label">Address</label>
+									<input
+										required=""
+										name="address"
+										class="form-control"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label">Email</label>
+									<input
+										type="email"
+										class="form-control"
+										name="email"
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label">Contact</label>
+									<input
+										type="text"
+										class="form-control"
+										name="contact"
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label"
+										>Blood Group</label
+									>
+									<select
+										name="blood_group"
+										id=""
+										class="custom-select select2"
+										required
+									>
+										<option>A+</option>
+										<option>B+</option>
+										<option>O+</option>
+										<option>AB+</option>
+										<option>A-</option>
+										<option>B-</option>
+										<option>O-</option>
+										<option>AB-</option>
+									</select>
+								</div>
+								<button type="submit">Submit</button>
+							</form>
+							<div class="form-submitted-container">
+								<p>
+									Thank you for registering as a blood donor. Our team
+									will get in touch with you when a blood donation is
+									being conducted in your area.
+								</p>
+							</div>
+						</div>
+						<div id="register-donor-info" class="info-container">
+							<div class="requirements-container">
+								<h2>Blood Donors Requirements</h2>
+								<ul class="requirements-list">
+									<li>Age: 18 years or older</li>
+									<li>Weight: At least 50 kilograms (110 pounds)</li>
+									<li>
+										Health: Good health and free from infectious or
+										chronic diseases
+									</li>
+									<li>
+										Lifestyle: No high-risk behaviors (unprotected
+										sex, illegal drug use, etc.)
+									</li>
+									<li>
+										Travel: No recent travel to areas with a high risk
+										of infectious diseases
+									</li>
+								</ul>
+							</div>
+							<div class="donation-process">
+								<h2>How to Donate</h2>
+								<ul>
+									<li>Register by filling the form.</li>
+									<li>
+										Provide correct information while filling the
+										form.
+									</li>
+									<li>
+										Donate blood seven days a week at our main
+										facility in Kathmandu (10:00 - 17:00)
+									</li>
+									<li>
+										If you are unable to visit our main facility in
+										Kathmandu, our team will reach out to you when we
+										organize blood donation in your area.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		const height = window.innerHeight;
+		document.querySelectorAll(".navbar-btn").forEach((el, index) => {
+			el.addEventListener("click", (e) => {
+				console.log(height * (index + 1) - 70);
+				window.scrollTo(0, height * (index + 1) - (index + 1) * 70);
+			});
+		});
+		document
+			.getElementById("home-btn")
+			.addEventListener("click", (el) => window.scrollTo(0, 0));
+	</script>
+</html>
